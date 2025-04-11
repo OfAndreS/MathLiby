@@ -23,3 +23,11 @@ std::vector<float> listOfNumbers() // Create a dynamic list with the numbers for
 
    return v;
 }
+
+void emptyList(const std::vector<float>& v)
+{
+    if (v.empty()) {
+        std::cout << "| The list is empty, cannot calculate." << std::endl;
+        exit(1);
+    }
+}

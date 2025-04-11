@@ -25,7 +25,9 @@ void mainMenu()
             break;
         case '2':
             getListModa(listOfNumbers());
-            break; // Adicionado para evitar o fall-through
+            break; 
+        case '3':
+
         case '0':
             break;
         default:

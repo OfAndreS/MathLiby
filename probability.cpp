@@ -3,10 +3,7 @@
 void getListAvarege(const std::vector<float>& v)
 {   
     
-    if (v.empty()) {
-        std::cout << "| The list is empty, cannot calculate average." << std::endl;
-        exit(1);
-    }
+    emptyList(v);
 
     float sum = 0;
     for (float num : v) {
@@ -23,10 +20,7 @@ void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolve
     int newFrequency = 0;
     int oldFrequency = 0;
 
-    if (v.empty()) {
-        std::cout << "| The list is empty, cannot calculate average." << std::endl;
-        exit(1);
-    }
+    emptyList(v);
 
     for (float i : v)
     {
@@ -46,4 +40,10 @@ void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolve
     }
 
     std::cout << "| The most frequency number is: " << mostFrequencyNumber << std::endl;
+}
+
+void getListMediana(const std::vector<float>& v)
+{
+    emptyList(v);
+
 }

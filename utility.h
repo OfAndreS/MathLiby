@@ -5,3 +5,5 @@
 #include <string>
 
 std::vector<float> listOfNumbers();
+
+void emptyList(const std::vector<float>& v);
