@@ -1,11 +1,4 @@
 ﻿  LibyMath.cpp
-  probability.cpp
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(12,21): warning C4244: 'inicializando': conversão de 'const _Ty' para 'int', possível perda de dados
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(12,21): warning C4244:         with
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(12,21): warning C4244:         [
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(12,21): warning C4244:             _Ty=float
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(12,21): warning C4244:         ]
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(43,35): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   utility.cpp
 C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.cpp(19,44): warning C4101: 'e': variável local não referenciada
   Gerando Código...

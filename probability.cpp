@@ -9,7 +9,7 @@ void getListAvarege(const std::vector<float>& v)
     }
 
     float sum = 0;
-    for (int num : v) {
+    for (float num : v) {
         sum += num;
     }
     float average = sum / v.size();
@@ -19,7 +19,7 @@ void getListAvarege(const std::vector<float>& v)
 
 void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolver esse problema
 {
-    int mostFrequencyNumber = 0;
+    float mostFrequencyNumber = 0;
     int newFrequency = 0;
     int oldFrequency = 0;
 

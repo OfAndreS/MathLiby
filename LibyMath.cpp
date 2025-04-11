@@ -14,7 +14,7 @@ void mainMenu()
 
     do 
     {   
-        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) Moda List \n| ( 0 ) End program\n| Your choice:";
+        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) Moda List \n| ( 0 ) End program\n| Your choice: ";
 
         std::cin >> choice;
 
