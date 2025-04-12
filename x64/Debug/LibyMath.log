@@ -1,6 +1,2 @@
 ﻿  LibyMath.cpp
-  probability.cpp
-  utility.cpp
-C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.cpp(19,44): warning C4101: 'e': variável local não referenciada
-  Gerando Código...
   LibyMath.vcxproj -> C:\Development\Codes C++\University C++\VS Code\LibyMath\x64\Debug\LibyMath.exe
