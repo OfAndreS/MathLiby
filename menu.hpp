@@ -14,20 +14,20 @@ void mainMenu()
 
     do
     {
-        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) Moda List \n| ( 0 ) End program\n| Your choice: ";
+        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) List Moda \n| ( 3 ) List Variance \n| ( 0 ) End program\n| Your choice: ";
 
         std::cin >> choice;
 
         switch (choice)
         {
         case '1':
-            getListAvarege(listOfNumbers());
+            getListAverage(listOfNumbers());
             break;
         case '2':
             getListModa(listOfNumbers());
             break; 
         case '3':
-
+            getListVariance(listOfNumbers());
         case '0':
             break;
         default:

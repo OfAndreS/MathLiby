@@ -1,6 +1,6 @@
 #include "probability.h"
 
-void getListAvarege(const std::vector<float>& v)
+float getListAverage(const std::vector<float>& v)
 {   
     
     emptyList(v);
@@ -12,6 +12,8 @@ void getListAvarege(const std::vector<float>& v)
     float average = sum / v.size();
 
     std::cout << "| The list average is: " << average << std::endl;
+
+    return average;
 }
 
 void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolver esse problema
@@ -46,4 +48,30 @@ void getListMediana(const std::vector<float>& v)
 {
     emptyList(v);
 
+}
+
+float getListVariance(const std::vector<float>& v) 
+{
+    float listVariance;
+    float listSum = 0 ;
+    float listAvarage;
+    float diference;
+    int listSize; 
+    
+    emptyList(v);
+
+    listSize = v.size();
+    listAvarage = getListAverage(v);
+
+    for (float i : v)
+    {
+        diference = i - listAvarage;
+        listSum += diference * diference;
+    }
+
+    listVariance = listSum / listSize;
+
+    std::cout << "| The variance of the list is: " << listVariance << std::endl;
+
+    return listVariance;
 }

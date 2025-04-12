@@ -7,8 +7,10 @@
 
 #include "utility.h"
 
-void getListAvarege(const std::vector<float>& v);
+float getListAverage(const std::vector<float>& v);
 
 void getListModa(const std::vector<float>& v);
 
 void getListMediana(const std::vector<float>& v);
+
+float getListVariance(const std::vector<float>& v);
