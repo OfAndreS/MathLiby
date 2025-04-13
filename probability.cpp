@@ -44,10 +44,32 @@ void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolve
     std::cout << "| The most frequency number is: " << mostFrequencyNumber << std::endl;
 }
 
-void getListMediana(const std::vector<float>& v)
+float getListMediana(const std::vector<float>& oldV)
 {
+    std::vector<float> v = oldV;
+    int listSize = v.size();
+    std::cout << "| v size " << listSize << std::endl;
     emptyList(v);
 
+    std::sort(v.begin(), v.end());
+
+    if ((listSize % 2) == 0)
+    {
+        int midIndex1 = (listSize / 2) - 1;
+        int midIndex2 = listSize / 2;
+        float listMediana = (v[midIndex1] + v[midIndex2]) / 2.0f;
+        std::cout << "| The mediana of the list is: " << listMediana << std::endl;
+
+        return listMediana;
+    }
+    else
+    {
+        int midIndex = listSize / 2;
+
+        std::cout << "| The mediana of the list is: " << v[midIndex] << std::endl;
+
+        return v[midIndex];
+    }
 }
 
 float getListVariance(const std::vector<float>& v) 

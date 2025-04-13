@@ -14,7 +14,7 @@ void mainMenu()
 
     do
     {
-        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) List Moda \n| ( 3 ) List Variance \n| ( 0 ) End program\n| Your choice: ";
+        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) List Moda \n| ( 3 ) List Mediana\n| ( 4 ) List Variance \n| ( 0 ) End program\n| Your choice: ";
 
         std::cin >> choice;
 
@@ -27,7 +27,11 @@ void mainMenu()
             getListModa(listOfNumbers());
             break; 
         case '3':
+            getListMediana(listOfNumbers());
+            break;
+        case '4':
             getListVariance(listOfNumbers());
+            break;
         case '0':
             break;
         default:
