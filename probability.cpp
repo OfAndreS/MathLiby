@@ -48,7 +48,6 @@ float getListMediana(const std::vector<float>& oldV)
 {
     std::vector<float> v = oldV;
     int listSize = v.size();
-    std::cout << "| v size " << listSize << std::endl;
     emptyList(v);
 
     std::sort(v.begin(), v.end());
