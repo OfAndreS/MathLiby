@@ -96,3 +96,22 @@ float getListVariance(const std::vector<float>& v)
 
     return listVariance;
 }
+
+void getListSeparatriz(const std::vector<float>& v)
+{
+    float listSize = v.size();
+    float listQ1;
+    float listQ2;
+    float listQ3;
+
+    emptyList(v);
+
+    // Para o Q1:
+
+    listQ1 = (1 * (listSize + 1) / 4);
+    listQ2 = getListMediana(v);
+    listQ3 = (3 * (listSize + 1) / 4);
+
+    std::cout << "| The Sepatariz of the list is Q1: " << listQ1 << " | Q2: " << listQ2 << " | Q3: " << listQ3 << std::endl;
+
+}
