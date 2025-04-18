@@ -1,1 +1,16 @@
-﻿  LibyMath.vcxproj -> C:\Development\Codes C++\University C++\VS Code\LibyMath\x64\Debug\LibyMath.exe
+﻿  LibyMath.cpp
+  probability.cpp
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(21,18): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(70,18): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\probability.cpp(105,22): warning C4267: '=': conversão de 'size_t' para 'int', possível perda de dados
+  utility.cpp
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.cpp(19,44): warning C4101: 'e': variável local não referenciada
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.cpp(27,8): error C2556: 'double calcularRaizN(double,int)': função sobrecarregada difere apenas pelo tipo de retorno de 'float calcularRaizN(double,int)'
+      C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.h(12,7):
+      consulte a declaração de 'calcularRaizN'
+  
+C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.cpp(27,8): error C2371: 'calcularRaizN': redefinição; tipos básicos diferentes
+      C:\Development\Codes C++\University C++\VS Code\LibyMath\LibyMath\utility.h(12,7):
+      consulte a declaração de 'calcularRaizN'
+  
+  Gerando Código...

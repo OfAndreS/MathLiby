@@ -14,7 +14,7 @@ void mainMenu()
 
     do
     {
-        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) List Moda \n| ( 3 ) List Mediana\n| ( 4 ) List Variance\n| ( 5 ) List Separatriz \n| ( 0 ) End program\n| Your choice: ";
+        std::cout << "\n\n| Probability Menu\n|\n| ( 1 ) List Avarage \n| ( 2 ) List Moda \n| ( 3 ) List Mediana\n| ( 4 ) List Variance\n| ( 5 ) List Geometry \n| ( 0 ) End program\n| Your choice: ";
 
         std::cin >> choice;
 
@@ -33,7 +33,7 @@ void mainMenu()
             getListVariance(listOfNumbers());
             break;
         case '5':
-            getListSeparatriz(listOfNumbers());
+            getListAverageGeometry(listOfNumbers());
         case '0':
             break;
         default:

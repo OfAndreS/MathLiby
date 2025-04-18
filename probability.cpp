@@ -16,6 +16,26 @@ float getListAverage(const std::vector<float>& v)
     return average;
 }
 
+float getListAverageGeometry(const std::vector<float>& v)
+{
+    int listSize = v.size();
+    float listMultiplication = 1.0;
+    float listAverageGeometry;
+
+    emptyList(v);
+
+    for (int i = 0; i < listSize; i++)
+    {
+        listMultiplication = listMultiplication * v.at(i);
+    }
+
+    listAverageGeometry = calcularRaizN(listMultiplication, listSize);
+
+    std::cout << "| The Geometry Avarage of the list is: " << listAverageGeometry << std::endl;
+
+    return listAverageGeometry;
+}
+
 void getListModa(const std::vector<float>& v) // NOTE: Utilizar map para resolver esse problema
 {
     float mostFrequencyNumber = 0;
@@ -73,7 +93,8 @@ float getListMediana(const std::vector<float>& oldV)
 
 float getListVariance(const std::vector<float>& v) 
 {
-    float listVariance;
+    float listAmostralVariance;
+    float listPopulacionalVariance;
     float listSum = 0 ;
     float listAvarage;
     float diference;
@@ -90,28 +111,10 @@ float getListVariance(const std::vector<float>& v)
         listSum += diference * diference;
     }
 
-    listVariance = listSum / listSize;
+    listAmostralVariance = listSum / listSize - 1;
+    listPopulacionalVariance = listSum / listSize;
 
-    std::cout << "| The variance of the list is: " << listVariance << std::endl;
+    std::cout << "|\n| The variance of the list is:\n| Populacional: " << listPopulacionalVariance << "\n| Amostral: " << listAmostralVariance << std::endl;
 
-    return listVariance;
-}
-
-void getListSeparatriz(const std::vector<float>& v)
-{
-    float listSize = v.size();
-    float listQ1;
-    float listQ2;
-    float listQ3;
-
-    emptyList(v);
-
-    // Para o Q1:
-
-    listQ1 = (1 * (listSize + 1) / 4);
-    listQ2 = getListMediana(v);
-    listQ3 = (3 * (listSize + 1) / 4);
-
-    std::cout << "| The Sepatariz of the list is Q1: " << listQ1 << " | Q2: " << listQ2 << " | Q3: " << listQ3 << std::endl;
-
+    return listAmostralVariance;
 }

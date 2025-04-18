@@ -24,6 +24,23 @@ std::vector<float> listOfNumbers() // Create a dynamic list with the numbers for
    return v;
 }
 
+float calcularRaizN(float num, int n) {
+    // Verifica se n é par e o número é negativo (raiz não real)
+    if (num < 0 && n % 2 == 0) {
+        std::cerr << "Erro: Não existe raiz real par de número negativo." << std::endl;
+        return NAN; // Retorna Not a Number
+    }
+
+    // Verifica se n é zero
+    if (n == 0) {
+        std::cerr << "Erro: Índice de raiz não pode ser zero." << std::endl;
+        return NAN;
+    }
+
+    // Calcula a raiz n-ésima usando potência
+    return pow(num, 1.0 / n);
+}
+
 void emptyList(const std::vector<float>& v)
 {
     if (v.empty()) {

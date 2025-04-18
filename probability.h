@@ -16,4 +16,4 @@ float getListMediana(const std::vector<float>& v);
 
 float getListVariance(const std::vector<float>& v);
 
-void getListSeparatriz(const std::vector<float>& v);
+float getListAverageGeometry(const std::vector<float>& v);
